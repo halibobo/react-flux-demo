@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/newsItem.css'
+import '../../res/css/newsItem.css'
 import URL from 'url';
-import ImageGrayArrow from '../img/logo.png';
+import ImageGrayArrow from '../../res/img/logo.png';
 import Moment from 'moment'
 
 export default class NewsItem extends React.Component {
