@@ -6,7 +6,7 @@ import NewsList from './news/NewsList.js';
 class Hello extends React.Component {
     render() {
         return (
-            <div />
+            <div >loading...</div>
         );
     }
 }
