@@ -3,22 +3,22 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var config = {
-  entry: ['babel-polyfill','./apps/app.js'],
+  entry: ['./apps/app.js'],
 
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   devServer: {
     inline: true,
-    port: 7777
+    port: 8888
   },
 
   module: {
     loaders: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel',
         query: {
