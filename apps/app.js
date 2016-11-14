@@ -1,11 +1,12 @@
 import $ from 'jquery';
 import React from 'react';
 import { render } from 'react-dom';
+import NewsList from './news/NewsList.js';
 
 class Hello extends React.Component {
     render() {
         return (
-            <div>Hello World</div>
+            <NewsList />
         );
     }
 }
