@@ -86,5 +86,5 @@ export default class NewsHeader extends React.Component {
             </div>
         );
     }
-}
+};
 

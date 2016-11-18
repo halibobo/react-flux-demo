@@ -20,7 +20,7 @@ var ProductRow = React.createClass({
                 <td>{this.props.product.price}</td>
             </tr>
         );
-    }
+    },
 });
 
 var ProductTable = React.createClass({

@@ -1,7 +1,5 @@
 import 'whatwg-fetch'
 import assign from 'object-assign';
-import {msg} from 'iflux2';
-import QMKit from './kit';
 import {
   HTTP_TIME_OUT
 } from './config';
@@ -50,14 +48,12 @@ function fetchPromise(url, req) {
   }
 
   const request = {
-    method: 'GET',
+    method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Platform': 'wechat',
+      'Platform': 'ios',
       'Authorization': 'JWT' + (window.token ? ' ' + window.token : ''), // 空格放在未尾ios10以下不支付;
-      //'RequestDomain': 'http://store006030.b2b.1000.com',//'http://maomao.wxdhtest2.1000.com',// http://store500110.b2b.1000.com', //http://store006030.b2b.1000.com/
-      //'X-Request-With': null,
     }
   };
 
